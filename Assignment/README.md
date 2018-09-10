@@ -1,14 +1,14 @@
 Readme for math.c and math.h file
 
-math.h:\n
--The math.h header file provides the outline for the math.c file. It lists the functions that will be defined in the math.c file, as well as the parameters each function will accept. This also specifies the data type each function will return (such as an int or double) in the beginning of each function statement. i.e: double add(int a, int b); double is the return type.\n
+math.h
+-The math.h header file provides the outline for the math.c file. It lists the functions that will be defined in the math.c file, as well as the parameters each function will accept. This also specifies the data type each function will return (such as an int or double) in the beginning of each function statement. i.e: double add(int a, int b); double is the return type.
 
--The following lists the functions specified in the math.h file: add, subtract, multiply, divide, modulus, bitwise AND, bitwise OR, bitwise XOR, and bitwise inverse.\n
+-The following lists the functions specified in the math.h file: add, subtract, multiply, divide, modulus, bitwise AND, bitwise OR, bitwise XOR, and bitwise inverse.
 
 -all bitwise functions return ints (all accept 2 int parameters ***excepts inverse***)
 -add, subtract, multiply, and divide return doubles (each except 2 double parameters)
 -modulus returns an int (accepts 2 ints)
-***exception*** - inverse accepts 1 int parameter and returns an int\n
+***exception*** - inverse accepts 1 int parameter and returns an int
 
 math.c
 -The math.c file defines the functions outlined by the math.h file.
