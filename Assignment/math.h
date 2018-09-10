@@ -20,42 +20,10 @@
  * ~ Bitwise Inverse (~num1) for this operation, num1 and num2 are still needed
 */
 
-//code to state that this .h file will define the functions for the class math.c
 #ifndef MATH_H_
 #define MATH_H_
 
-//functoion definition for add (requires parameters: 2 doubles, returns a double)
-double add(double a, double b);
+//Part of your documentation should be listing the valid inputs and outputs for the functions you create.
+int math(int num1, int num2, char Operator);
 
-//functoion definition for subtract (requires parameters: 2 doubles, returns a double)
-double subtract(double a, double b);
-
-//functoion definition for multiply (requires parameters: 2 doubles, returns a double)
-double multiply(double a, double b);
-
-//functoion definition for divide (requires parameters: 2 doubles, returns a double)
-double divide(double a, double b);
-
-//functoion definition for modulus (requires parameters: 2 ints, returns an int)
-int modulus(int a, int b);
-
-//functoion definition for bitwise rightshift (requires parameters: 2 ints, returns an int)
-int rightshift(int num, int s_amount);
-
-//functoion definition for bitwise leftshift (requires parameters: 2 ints, returns an int)
-int leftshift(int num, int s_amount);
-
-//functoion definition for bitwise AND (requires parameters: 2 ints, returns an int)
-int AND(int a, int b);
-
-//functoion definition for bitwise OR (requires parameters: 2 ints, returns an int)
-int OR(int a, int b);
-
-//functoion definition for bitwise XOR (requires parameters: 2 ints, returns an int)
-int XOR(int a, int b);
-
-//functoion definition for bitwise inverse (requires parameters: 1 int, returns an int)
-int inverse(int a);
-
-//ends function definitions
 #endif /* MATH_H_ */
