@@ -1,5 +1,8 @@
 Readme for math.c and math.h file
 
+CODE written by Michael Sorce on 9/9/18
+last updated: 9/9/18
+
 math.h
 -The math.h header file provides the outline for the math.c file. It lists the functions that will be defined in the math.c file, as well as the parameters each function will accept. This also specifies the data type each function will return (such as an int or double) in the beginning of each function statement. i.e: double add(int a, int b); double is the return type.
 
