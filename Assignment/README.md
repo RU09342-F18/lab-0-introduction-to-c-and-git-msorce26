@@ -6,7 +6,7 @@ last updated: 9/9/18
 
 dependent on libraries: math.h, stdio.h
 
-*math.h*
+***math.h***
 
 -The math.h header file provides the outline for the math.c file. It lists the functions that will be defined in the math.c file, as well as the parameters each function will accept. This also specifies the data type each function will return (such as an int or double) in the beginning of each function statement. i.e: double add(int a, int b); double is the return type.
 
@@ -17,7 +17,7 @@ dependent on libraries: math.h, stdio.h
 -modulus returns an int (accepts 2 ints)
 ***exception*** - inverse accepts 1 int parameter and returns an int
 
-*math.c*
+***math.c***
 
 -The math.c file defines the functions outlined by the math.h file.
 
