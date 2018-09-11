@@ -1,69 +1,85 @@
 //includes header file math.h
 //necessary to define functions of math.h file
+#include <stdio.h>
 #include "math.h"
 
-//returns the sum of two doubles
-double add(double a, double b)
+//definition of the math function as stated in the math.h file
+//accepts 2 ints as parameters
+//accepts one char to represent the desired function
+//returns and int which represents the result of the function
+int math(int num1, int num2, char Operator)
 {
-    return a + b;
+    //adds the two input numbers if char '+' is input
+    if(Operator == '+')
+    {
+        return num1 + num2;
+    }
+
+    //subtracts the two input numbers if character '-' is input
+    else if(Operator == '-')
+    {
+        return num1 - num2;
+    }
+
+    //multiplies the two input numbers if character '*' is input
+    else if(Operator == '*')
+    {
+        return num1 * num2;
+    }
+
+    //divides the two input numbers if character '/' is input
+    else if(Operator == '/')
+    {
+        return num1 / num2;
+    }
+
+    //finds remainder of the first divided by the second input number if character '%' is input
+    else if(Operator == '%')
+    {
+        return num1 % num2;
+    }
+
+    //Performs bitwise left shift of num1 by num2 times if '<' operator is input
+    else if(Operator == '<')
+    {
+        return num1 << num2;
+    }
+
+    //Performs bitwise right shift of num1 by num2 times if '>' operator is input
+    else if(Operator == '>')
+    {
+        return num1 >> num2;
+    }
+
+    //Performs bitwise AND of the input numbers if '&' operator is input
+    else if(Operator == '&')
+    {
+        return num1 & num2;
+    }
+
+    //Performs bitwise OR of input numbers if '|' operator is input
+    else if(Operator == '|')
+    {
+        return num1 | num2;
+    }
+
+    //Performs bitwise XOR of input numbers if '^' operator is input
+    else if(Operator == '^')
+    {
+        return num1 ^ num2;
+    }
+
+    //Performs bitwise inverse of input num1 if '~' operator is input
+    else if(Operator == '~')
+    {
+        return ~num1;
+    }
+
+    //else throws error message if invalid operator (char) is entered
+    else
+    {
+        printf("Invalid operator input");
+        return 0;
+    }
 }
 
-//returns the difference of two doubles
-double subtract(double a, double b)
-{
-    return a - b;
-}
-
-//returns the product of two doubles
-double multiply(double a, double b)
-{
-    return a * b;
-}
-
-//returns the quotient of two doubles
-double divide(double a, double b)
-{
-    return a / b;
-}
-
-//returns the remainder of the value of a/b
-int modulus(int a, int b)
-{
-    return a % b;
-}
-
-//shifts the value 'num' to the right 's_amount' times
-int rightshift(int num, int s_amount)
-{
-    return num >> s_amount;
-}
-
-//shifts the value 'num' to the left 's_amount' times
-int leftshift(int num, int s_amount)
-{
-    return num << s_amount;
-}
-
-//returns the bitwise AND result of the two value input
-int AND(int a, int b)
-{
-    return a & b;
-}
-
-//returns the bitwise OR result of the two value input
-int OR(int a, int b)
-{
-    return a | b;
-}
-
-//returns the bitwise XOR result of the two value input
-int XOR(int a, int b)
-{
-    return a ^ b;
-}
-
-//returns the bitwise inverse of the value input
-int inverse(int a)
-{
-    return ~a;
-}
